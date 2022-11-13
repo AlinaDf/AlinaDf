@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#6433c0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--Sprite-->
+
+    <svg style="display: none">
+        <symbol viewBox="0 0 15 24" id="light">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.67236 0.0291803C2.81989 0.525315 -0.00731708 3.63809 1.42253e-05 7.37538C0.00263637 8.69802 0.329388 9.64541 1.49608 11.7133C1.78987 12.2341 2.10276 12.8036 2.19127 12.9789C2.53124 13.6517 3.02929 15.48 3.1619 16.5418C3.26405 17.3597 3.6266 17.9738 4.23944 18.367C4.82225 18.7409 4.91402 18.7506 7.66364 18.7318L10.0997 18.7151L10.4731 18.5334C11.1414 18.208 11.6645 17.5471 11.7807 16.8813C12.2533 14.1741 12.4324 13.6278 13.4256 11.8625C14.6853 9.62347 14.9938 8.74401 14.9999 7.37453C15.018 3.32201 11.5811 -0.0495872 7.48314 0.000552108C7.12551 0.00490743 6.76066 0.017814 6.67236 0.0291803ZM8.70378 0.874378C11.3421 1.30423 13.5544 3.44056 14.1106 6.09566C14.4649 7.78701 14.1276 9.11671 12.738 11.5054C11.832 13.0629 11.3005 14.6257 11.0816 16.3753C10.9905 17.1036 10.6854 17.575 10.1262 17.8514C9.74482 18.04 5.25993 18.0398 4.87432 17.8511C4.32367 17.5819 4.01281 17.1007 3.92237 16.3775C3.69676 14.5742 3.20802 13.1491 2.22707 11.4341C0.854299 9.03407 0.537715 7.77023 0.891116 6.10065C1.64629 2.53285 5.02223 0.274512 8.70378 0.874378ZM3.88903 19.9109C3.83541 19.9697 3.79159 20.0889 3.79159 20.1758C3.79159 20.5699 3.56913 20.5476 7.50182 20.5476C11.4345 20.5476 11.212 20.5699 11.212 20.1758C11.212 19.7817 11.4345 19.804 7.50182 19.804C4.047 19.804 3.98488 19.8058 3.88903 19.9109ZM4.42417 21.5043C4.37055 21.5631 4.32672 21.6823 4.32672 21.7692C4.32672 22.1592 4.17105 22.141 7.50182 22.141C10.8326 22.141 10.6769 22.1592 10.6769 21.7692C10.6769 21.3792 10.8326 21.3974 7.50182 21.3974C4.58326 21.3974 4.51963 21.3996 4.42417 21.5043ZM4.9593 23.3633C4.90568 23.4221 4.86185 23.5413 4.86185 23.6282C4.86185 24.0125 4.77238 24 7.50182 24C10.2313 24 10.1418 24.0125 10.1418 23.6282C10.1418 23.2438 10.2313 23.2564 7.50182 23.2564C5.11952 23.2564 5.05428 23.2591 4.9593 23.3633Z"/>
+        </symbol>
+        <symbol viewBox="0 0 30 30" id="tg">
+            <path d="M28.7476 8.99074C27.9451 7.15723 26.8002 5.52445 25.3449 4.13807C25.157 3.95906 24.8597 3.96621 24.6807 4.15418C24.5018 4.34203 24.509 4.63934 24.6969 4.81822C27.5108 7.49895 29.0605 11.1149 29.0605 15C29.0605 22.753 22.753 29.0606 14.9999 29.0606C7.24687 29.0606 0.939434 22.753 0.939434 15C0.939434 7.24699 7.24699 0.939434 15 0.939434C17.8322 0.939434 20.5623 1.77768 22.895 3.3634C23.1096 3.50924 23.4017 3.45352 23.5476 3.23906C23.6934 3.02449 23.6377 2.73234 23.4232 2.5865C20.934 0.894434 18.0214 0 15 0C10.9934 0 7.22654 1.56023 4.39342 4.39342C1.56029 7.22654 0 10.9934 0 15C0 19.0066 1.56029 22.7735 4.39342 25.6066C7.22654 28.4398 10.9934 30 15 30C19.0066 30 22.7735 28.4398 25.6066 25.6066C28.4397 22.7735 30 19.0066 30 15C30 12.911 29.5786 10.8892 28.7476 8.99074Z"/>
+            <path d="M21.8164 6.36036L12.7826 10.5657C12.5474 10.6751 12.4456 10.9546 12.5551 11.1898C12.6646 11.425 12.944 11.527 13.1791 11.4175L18.7517 8.82329L16.0425 11.0165L9.8253 16.0495L6.42475 14.5617L11.1899 12.3434C11.4251 12.2339 11.527 11.9545 11.4175 11.7193C11.3081 11.4841 11.0285 11.3821 10.7935 11.4917L5.6642 13.8795C5.39151 14.0064 5.21936 14.2841 5.22628 14.5846C5.23301 14.8788 5.41079 15.1435 5.68026 15.2614L9.47725 16.9225L10.5893 23.5948C10.6577 24.0073 11.2164 24.1248 11.4455 23.775L14.6 18.9602L20.5655 21.7442C21.0434 21.9674 21.6122 21.6263 21.643 21.1016L22.4835 6.81359C22.4844 6.80035 22.4843 6.78675 22.484 6.77345C22.4746 6.44093 22.1174 6.22115 21.8164 6.36036ZM11.1339 21.1482L10.4071 16.7872L17.8115 10.7931L12.1444 17.1471C12.0935 17.2043 12.0556 17.2762 12.038 17.3509L11.1339 21.1482ZM12.1318 21.0134L12.8185 18.129L13.7398 18.5589L12.1318 21.0134ZM14.26 17.765L13.2659 17.3011L18.1566 11.8176L17.4492 12.8973L14.26 17.765ZM20.7209 20.7801L15.1202 18.1664L21.4423 8.51697L20.7209 20.7801Z"/>
+        </symbol>
+        <symbol viewBox="0 0 30 30" id="whats">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0037 7.04129C21.9642 5.99489 20.7273 5.16518 19.3648 4.60022C18.0023 4.03526 16.5412 3.74629 15.0663 3.75004C8.88125 3.75004 3.84625 8.78379 3.84375 14.9713C3.84375 16.9488 4.36 18.8788 5.34125 20.5813L3.75 26.395L9.69875 24.8338C11.3442 25.7295 13.1877 26.1992 15.0612 26.2H15.0663C21.25 26.2 26.285 21.1663 26.2875 14.9788C26.2917 13.5044 26.0037 12.0438 25.4401 10.6814C24.8765 9.31895 24.0484 8.08175 23.0037 7.04129ZM15.0663 24.3063H15.0625C13.3919 24.3065 11.752 23.857 10.315 23.005L9.975 22.8025L6.445 23.7288L7.38625 20.2875L7.165 19.935C6.23098 18.4481 5.73654 16.7273 5.73875 14.9713C5.74125 9.82879 9.925 5.64504 15.07 5.64504C16.2953 5.64231 17.509 5.88264 18.6408 6.3521C19.7726 6.82156 20.8001 7.51084 21.6637 8.38004C22.532 9.24509 23.2202 10.2737 23.6886 11.4063C24.157 12.5389 24.3962 13.7531 24.3925 14.9788C24.39 20.1213 20.2063 24.3063 15.0663 24.3063ZM20.1825 17.32C19.9013 17.1788 18.5238 16.5013 18.2662 16.4075C18.01 16.3138 17.8238 16.2675 17.6363 16.5475C17.4488 16.8275 16.9113 17.4588 16.7475 17.6463C16.5837 17.8338 16.42 17.8563 16.14 17.7163C15.86 17.5763 14.9563 17.28 13.885 16.325C13.0512 15.5813 12.4887 14.6638 12.325 14.3825C12.1612 14.1013 12.3075 13.95 12.4487 13.81C12.575 13.685 12.7288 13.4825 12.8687 13.3188C13.0087 13.155 13.055 13.0388 13.1488 12.8513C13.2425 12.6638 13.1962 12.5 13.125 12.36C13.055 12.2188 12.4937 10.8388 12.26 10.2775C12.0337 9.73379 11.8025 9.80629 11.63 9.79879C11.4513 9.79148 11.2726 9.78814 11.0938 9.78879C10.9516 9.79241 10.8117 9.82537 10.6828 9.8856C10.554 9.94582 10.439 10.032 10.345 10.1388C10.0875 10.42 9.36375 11.0975 9.36375 12.4775C9.36375 13.8575 10.3687 15.1913 10.5087 15.3788C10.6487 15.5663 12.4862 18.3975 15.2987 19.6125C15.9688 19.9013 16.4913 20.0738 16.8975 20.2038C17.5687 20.4175 18.18 20.3863 18.6637 20.315C19.2025 20.235 20.3225 19.6375 20.5562 18.9825C20.79 18.3275 20.79 17.7663 20.72 17.6488C20.65 17.5313 20.4613 17.46 20.1825 17.32Z"/>
+        </symbol>
+        <symbol viewBox="0 0 30 30" id="vk">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.27212 8.34721C3.39087 8.20631 3.56574 8.125 3.75 8.125H8.15014C8.45628 8.125 8.71735 8.34675 8.7669 8.64884C8.94788 9.75229 9.54302 11.8828 10.9419 13.8835C11.1397 14.1665 11.0707 14.5561 10.7878 14.7539C10.5049 14.9517 10.1153 14.8828 9.91748 14.5999C8.5816 12.6893 7.91663 10.6802 7.63372 9.375H4.5215C5.05765 11.5475 6.52815 15.2375 8.746 18.0247C9.96172 19.5526 11.2821 20.5329 12.4242 21.1223C13.5848 21.7213 14.518 21.8956 14.953 21.8731C14.9689 21.8724 14.9848 21.8721 15.0008 21.8725C15.2031 21.8775 15.4491 21.822 15.6319 21.6731C15.7908 21.5437 15.9836 21.2785 15.9836 20.6825V18.7815C15.9836 18.4154 16.1271 18.0455 16.4335 17.8083C16.757 17.5576 17.1799 17.5218 17.5581 17.697C17.9598 17.8831 18.4189 18.121 18.6993 18.272C18.7151 18.2806 18.7306 18.2898 18.7456 18.2996C20.167 19.232 21.5364 20.7295 22.4045 21.8415C22.4163 21.8565 22.4276 21.8644 22.4351 21.8682C22.4425 21.8719 22.4469 21.8723 22.449 21.8723H25.5936C25.6018 21.8723 25.6055 21.8711 25.6063 21.871C25.6071 21.8706 25.6075 21.8705 25.6081 21.8701C25.6096 21.869 25.6151 21.8645 25.6198 21.8542C25.6244 21.844 25.6258 21.8334 25.6246 21.8245C25.6239 21.8181 25.6214 21.8055 25.6058 21.7866C24.8251 20.8408 23.7871 19.68 22.8828 18.6685C22.5618 18.3095 22.2576 17.9694 21.9878 17.6644C21.3636 16.9589 21.3184 15.9236 21.799 15.149C22.8523 13.4512 24.2384 11.0146 24.666 9.375H22.1131C22.1115 9.375 22.1035 9.37501 22.0886 9.38549C22.0726 9.39674 22.0516 9.41878 22.036 9.45418C21.1454 11.4639 19.2681 13.9445 17.902 15.1908C17.5199 15.5393 17.0061 15.5949 16.59 15.3541C16.2009 15.129 15.9836 14.6986 15.9836 14.2418V9.375H12.6448C12.6896 9.4583 12.7336 9.54374 12.7759 9.63077C13.0293 10.1518 13.2608 10.8006 13.2608 11.4269C13.2608 11.6946 13.2629 12.0997 13.2655 12.5728C13.2721 13.808 13.2813 15.5066 13.2605 16.4316C13.2529 16.7767 12.9668 17.0503 12.6218 17.0425C12.2766 17.0347 12.0031 16.7487 12.0109 16.4036C12.0312 15.4974 12.0222 13.8404 12.0156 12.6086C12.013 12.1257 12.0107 11.7081 12.0107 11.4269C12.0107 11.0777 11.8719 10.63 11.6518 10.1775C11.4359 9.73351 11.1757 9.35356 11.0068 9.15569C10.8486 8.97021 10.8126 8.70962 10.9148 8.48821C11.0169 8.2668 11.2385 8.125 11.4823 8.125H16.6086C16.9539 8.125 17.2336 8.40483 17.2336 8.75V14.1039C18.467 12.9161 20.115 10.7038 20.8931 8.94775C21.0971 8.48742 21.5501 8.125 22.1131 8.125H24.6739C25.4495 8.125 26.0948 8.84066 25.8805 9.67136C25.4026 11.5246 23.9034 14.128 22.8611 15.8079C22.652 16.145 22.6898 16.5714 22.924 16.8361C23.1843 17.1302 23.4814 17.4626 23.7976 17.8162C24.7061 18.8323 25.7719 20.0241 26.5699 20.991C27.2546 21.8208 26.7159 23.1223 25.5936 23.1223H22.449C22.0339 23.1223 21.6615 22.9209 21.4193 22.6108C20.5906 21.5493 19.33 20.1844 18.0824 19.3596C17.862 19.2413 17.5404 19.0745 17.2336 18.9264V20.6825C17.2336 21.5856 16.921 22.2354 16.4213 22.6424C15.9548 23.0222 15.4019 23.1281 14.994 23.1226C14.2603 23.1536 13.1129 22.8844 11.8509 22.233C10.5569 21.5652 9.097 20.4735 7.76787 18.8031C5.13324 15.492 3.50613 11.0215 3.13403 8.85584C3.10283 8.67423 3.15335 8.48811 3.27212 8.34721ZM17.2368 18.7516C17.2369 18.7517 17.2366 18.7525 17.236 18.754L17.2368 18.7516ZM17.0326 18.8311H17.0325H17.0326ZM17.2429 14.2946C17.2428 14.2946 17.2423 14.2939 17.2414 14.2922C17.2425 14.2937 17.243 14.2945 17.2429 14.2946Z"/>
+        </symbol>
+    </svg>
+
+    <div class="wrapper">
+            <header class="header" id="header">
+                <div class="header__container">
+                    <div class="header__logo">
+                        <div class="header__logo-photo">
+                            <img src="assets/img/header/logo.svg" alt="">
+                        </div>
+                        <div class="header__logo-pers">
+                            <div class="header__logo-name">Алина</div>
+                            <div class="header__logo-prof">Фронтенд-разработчик</div>
+                        </div>
+                    </div>
+                    <nav class="header__nav nav">
+                        <ul class="nav__inner">
+                            <li><a href="" class="nav__link" data-scroll="#intro">Главная</a></li>
+                            <li><a href="" class="nav__link" data-scroll="#portfolio">Портфолио</a></li>
+                            <li><a href="" class="nav__link" data-scroll="#about">Обо мне</a></li>
+                            <li><a href="" class="nav__link" data-scroll="#technology">Технологии</a></li>
+                            <li class="header__manage-btn">
+                                <button class="btn" data-modal="#modal">Заказать</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__manage">
+                        <div class="page__action">
+                            <button type="button" class="page__theme"></button>
+                            <button type="button" class="page__reset"></button>
+                        </div>
+                        <div class="header__manage-lang nav__item">
+                            <a href="#" class="has-subnav">
+                                <div class="header__manage-flag">
+                                    <img src="assets/img/header/ru.svg" alt="">
+                                </div>
+                                <div class="header__manage-arrow">
+                                    <img src="assets/img/header/arrow.svg" alt="">
+                                </div>
+                            </a>
+
+                            <ul class="subnav">
+                                <div class="subnav__body">
+                                    <li>
+                                        <a href="index (ru).html">
+                                            <div class="subnav__flag">
+                                                <img src="assets/img/header/ru.svg" alt="">
+                                            </div>
+                                            <div class="subnav__text">ru</div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index (en).html">
+                                            <div class="subnav__flag">
+                                                <img src="assets/img/header/en.svg" alt="">
+                                            </div>
+                                            <div class="subnav__text">en</div>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="header__manage-btn">
+                            <button class="btn" data-modal="#modal">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="header__menu">
+                        <span></span>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="intro" id="intro">
+                    <div class="intro__container">
+                        <div class="intro__content">
+                            <div class="intro__content-block">
+                                <h1 class="intro__title">Привет, я <br><span>Фронтенд-разработчик</span></h1>
+                                <div class="intro__social">
+                                    <div class="intro__social-item">
+                                        <a href="https://t.me/dijar3">
+                                            <img src="assets/img/intro/social-1.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="intro__social-item">
+                                        <a href="#">
+                                            <img src="assets/img/intro/social-2.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="intro__social-item">
+                                        <a href="#">
+                                            <img src="assets/img/intro/social-3.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="intro__buttons">
+                                    <div class="intro__btn">
+                                        <button class="btn btn--violet" data-modal="#modal">Связаться</button>
+                                    </div>
+                                    <div class="intro__btn">
+                                        <button class="btn">Резюме</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro__photo">
+                            <img src="assets/img/intro/photo.gif" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="portfolio" id="portfolio">
+                    <div class="portfolio__container">
+                        <div class="portfolio__header header-block">
+                            <div class="header-block__suptitle">мои работы</div>
+                            <h2 class="header-block__title">Портфолио</h2>
+                        </div>
+                        <div class="portfolio__filter">
+                            <a href="#" class="portfolio__filter-link" data-filter="all">Все</a>
+                            <a href="#" class="portfolio__filter-link" data-filter="landing">Лендинг</a>
+                            <a href="#" class="portfolio__filter-link" data-filter="online-shop">Интернет-магазин</a>
+                            <a href="#" class="portfolio__filter-link" data-filter="multi">Многостраничник</a>
+                            <a href="#" class="portfolio__filter-link" data-filter="corporate">Корпоративный сайт</a>
+                        </div>
+                        <div class="portfolio__inner">
+                            <a href="#" class="portfolio__col" data-cat="landing">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Лендинг</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="portfolio__col" data-cat="landing">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Лендинг</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="portfolio__col" data-cat="landing">
+                                <div class="portfolio__item" id="card-3">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Интернет-магазин</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="portfolio__col" data-cat="landing">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Интернет-магазин</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="portfolio__col" data-cat="multi">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Многостраничник</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="portfolio__col" data-cat="corporate">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__item-img">
+                                        <img src="assets/img/portfolio/photo-1.svg" alt="">
+                                    </div>
+                                    <div class="portfolio__item-content">
+                                        <div class="portfolio__item-suptitle">Корпоративный</div>
+                                        <div class="portfolio__item-bottom">
+                                            <div class="portfolio__item-title">DEVit</div>
+                                            <div class="portfolio__item-year">2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="about" id="about">
+                    <div class="about__container">
+                        <div class="about__header header-block">
+                            <div class="header-block__suptitle">кто я?</div>
+                            <h2 class="header-block__title">Обо мне</h2>
+                        </div>
+                        <div class="about__body">
+                            <div class="about__photo">
+                                <img src="assets/img/about/photo-1.svg" alt="">
+                            </div>
+                            <div class="about__text">Есть над чем задуматься: стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, объединены в целые кластеры себе подобных. Также как базовый вектор развития играет важную роль в формировании переосмысления внешнеэкономических политик.</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="can" id="technology">
+                    <div class="can__header header-block">
+                        <div class="header-block__suptitle">ЧТО Я УМЕЮ</div>
+                        <h2 class="header-block__title">Технологии</h2>
+                    </div>
+                    <div class="can__inner">
+                        <div class="can__container">
+                            <div class="can__item">
+                                <img src="assets/img/can/html.svg" alt="">
+                            </div>
+                            <div class="can__item">
+                                <img src="assets/img/can/css.svg" alt="">
+                            </div>
+                            <div class="can__item">
+                                <img src="assets/img/can/scss.svg" alt="">
+                            </div>
+                            <div class="can__item">
+                                <img src="assets/img/can/js.svg" alt="">
+                            </div>
+                            <div class="can__item">
+                                <img src="assets/img/can/gulp.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__copy">© 2022 - Free Templates</div>
+                    <div class="footer__social">
+                        <div class="footer__social-item">
+                            <svg>
+                                <use xlink:href="#tg"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__social-item">
+                            <svg>
+                                <use xlink:href="#whats"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__social-item">
+                            <svg>
+                                <use xlink:href="#vk"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal__dialog">
+            <div class="modal__close" data-close="#modal">
+                <img src="assets/img/modal/close.svg" alt="">
+            </div>
+            <div class="modal__logo">
+                <div class="modal__logo-photo">
+                    <img src="assets/img/header/logo.svg" alt="">
+                </div>
+                <div class="header__logo-pers">
+                    <div class="modal__logo-name">Алина</div>
+                    <div class="modal__logo-prof">Фронтенд-разработчик</div>
+                </div>
+            </div>
+            <form action="#" class="modal__form">
+                <div class="modal__form-item">
+                    <input type="text" placeholder="Имя">
+                </div>
+
+                <div class="modal__form-item">
+                    <input type="tel" placeholder="Телефон">
+                </div>
+                <div class="modal__form-item">
+                    <input type="text" placeholder="Телеграмм">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+</html>

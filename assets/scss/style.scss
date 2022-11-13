@@ -1,0 +1,58 @@
+/*# sourceMappingURL=main.css.map */html {font-size: 62.5%;}body,html {margin: 0;padding: 0;height: 100%;}*,*:before,*:after {box-sizing: border-box;}body {font-family: 'Montserrat', sans-serif;background-color: #1D1D1D;} ul, ol, li {list-style: none;margin: 0;padding: 0;}button {border: 0;padding: 0;background: none;}h1, h2, h3, h4, h5, h6 {margin: 0;padding:0;}a {text-decoration: none;}input {border: 0; background: none;} p {margin: 0; padding: 0}.wrapper {min-height: 100%;overflow: hidden;display: flex;flex-direction: column;}.main {flex: 1 1 auto;}address {font-style: normal;}
+
+body {
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+[class*="__container"] {
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    max-width: 1170px;
+}
+
+@import "blocks/header";
+@import "blocks/btn";
+@import "blocks/subnav";
+@import "blocks/intro";
+@import "blocks/portfolio";
+@import "blocks/about";
+@import "blocks/can";
+@import "blocks/footer";
+@import "blocks/dark";
+@import "blocks/modal";
+
+/* */
+
+.header-block {
+    text-align: center;
+    margin-top: 6rem;
+}
+.header-block__suptitle {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.45em;
+    font-feature-settings: 'ss01' on, 'salt' on, 'ordn' on;
+    color: #6433C0;   
+    text-transform: uppercase;
+    
+    @media (max-width: 535px) {
+        font-size: 1.2rem;
+    }
+}
+.header-block__title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: calc(68 / 56);
+    
+    @media (max-width: 535px) {
+        font-size: 4rem;
+    }
+}
+
+.hide {
+    display: none;
+}
